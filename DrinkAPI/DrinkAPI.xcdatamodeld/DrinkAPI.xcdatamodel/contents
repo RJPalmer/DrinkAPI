@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Drink" representedClassName="Drink" syncable="YES" codeGenerationType="category">
+        <attribute name="dateModified" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="drinkID" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="drinkName" optional="YES" attributeType="String"/>
+        <attribute name="drinkReceipeId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="typeOfDrink" optional="YES" attributeType="String" defaultValueString=""/>
+        <relationship name="drinkCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DrinkCategory" inverseName="typeOfDrink" inverseEntity="DrinkCategory"/>
+        <relationship name="drinkGlassType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GlassType" inverseName="typeOfGlass" inverseEntity="GlassType"/>
+        <relationship name="drinkReceipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Receipe" inverseName="receipeFor" inverseEntity="Receipe"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="DrinkCategory" representedClassName="DrinkCategory" syncable="YES" codeGenerationType="category">
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <relationship name="typeOfDrink" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Drink" inverseName="drinkCategory" inverseEntity="Drink"/>
+    </entity>
+    <entity name="GlassType" representedClassName="GlassType" syncable="YES" codeGenerationType="category">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="typeOfGlass" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Drink" inverseName="drinkGlassType" inverseEntity="Drink"/>
+    </entity>
+    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="category">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <relationship name="receipeIngrdnt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Receipe" inverseName="ingrdntName" inverseEntity="Receipe"/>
+    </entity>
+    <entity name="Measurement" representedClassName="Measurement" syncable="YES" codeGenerationType="category">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="receipeMesrmnt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Receipe" inverseName="ingrdntMesrmnt" inverseEntity="Receipe"/>
+    </entity>
+    <entity name="Receipe" representedClassName="Receipe" syncable="YES" codeGenerationType="category">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="ingredientMeasurement" optional="YES" attributeType="String"/>
+        <attribute name="ingredientName" optional="YES" attributeType="String"/>
+        <attribute name="receipeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="ingrdntMesrmnt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Measurement" inverseName="receipeMesrmnt" inverseEntity="Measurement"/>
+        <relationship name="ingrdntName" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="receipeIngrdnt" inverseEntity="Ingredient"/>
+        <relationship name="receipeFor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drink" inverseName="drinkReceipe" inverseEntity="Drink"/>
+    </entity>
 </model>

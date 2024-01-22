@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		30AB3B792B571B8C006F13DB /* DrinkAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3B782B571B8C006F13DB /* DrinkAPIApp.swift */; };
-		30AB3B7B2B571B8C006F13DB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3B7A2B571B8C006F13DB /* Persistence.swift */; };
-		30AB3B7E2B571B8C006F13DB /* DrinkAPI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3B7C2B571B8C006F13DB /* DrinkAPI.xcdatamodeld */; };
 		30AB3B802B571B8C006F13DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3B7F2B571B8C006F13DB /* ContentView.swift */; };
 		30AB3B822B571B8E006F13DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AB3B812B571B8E006F13DB /* Assets.xcassets */; };
 		30AB3B862B571B8E006F13DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AB3B852B571B8E006F13DB /* Preview Assets.xcassets */; };
 		30AB3B902B571B8E006F13DB /* DrinkAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3B8F2B571B8E006F13DB /* DrinkAPITests.swift */; };
 		30AB3B9A2B571B8E006F13DB /* DrinkAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3B992B571B8E006F13DB /* DrinkAPIUITests.swift */; };
 		30AB3B9C2B571B8E006F13DB /* DrinkAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3B9B2B571B8E006F13DB /* DrinkAPIUITestsLaunchTests.swift */; };
+		30AB3C092B58C10F006F13DB /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3C082B58C10F006F13DB /* Drink.swift */; };
+		30AB3C0A2B58C10F006F13DB /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3C082B58C10F006F13DB /* Drink.swift */; };
+		30AB3C0B2B58C10F006F13DB /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AB3C082B58C10F006F13DB /* Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 /* Begin PBXFileReference section */
 		30AB3B752B571B8C006F13DB /* DrinkAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AB3B782B571B8C006F13DB /* DrinkAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAPIApp.swift; sourceTree = "<group>"; };
-		30AB3B7A2B571B8C006F13DB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		30AB3B7D2B571B8C006F13DB /* DrinkAPI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrinkAPI.xcdatamodel; sourceTree = "<group>"; };
 		30AB3B7F2B571B8C006F13DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30AB3B812B571B8E006F13DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30AB3B832B571B8E006F13DB /* DrinkAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrinkAPI.entitlements; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		30AB3B952B571B8E006F13DB /* DrinkAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AB3B992B571B8E006F13DB /* DrinkAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAPIUITests.swift; sourceTree = "<group>"; };
 		30AB3B9B2B571B8E006F13DB /* DrinkAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30AB3C082B58C10F006F13DB /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				30AB3B782B571B8C006F13DB /* DrinkAPIApp.swift */,
-				30AB3B7A2B571B8C006F13DB /* Persistence.swift */,
 				30AB3B7F2B571B8C006F13DB /* ContentView.swift */,
 				30AB3B812B571B8E006F13DB /* Assets.xcassets */,
 				30AB3B832B571B8E006F13DB /* DrinkAPI.entitlements */,
-				30AB3B7C2B571B8C006F13DB /* DrinkAPI.xcdatamodeld */,
 				30AB3B842B571B8E006F13DB /* Preview Content */,
+				30AB3C082B58C10F006F13DB /* Drink.swift */,
 			);
 			path = DrinkAPI;
 			sourceTree = "<group>";
@@ -265,10 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30AB3B7E2B571B8C006F13DB /* DrinkAPI.xcdatamodeld in Sources */,
 				30AB3B792B571B8C006F13DB /* DrinkAPIApp.swift in Sources */,
+				30AB3C092B58C10F006F13DB /* Drink.swift in Sources */,
 				30AB3B802B571B8C006F13DB /* ContentView.swift in Sources */,
-				30AB3B7B2B571B8C006F13DB /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AB3C0A2B58C10F006F13DB /* Drink.swift in Sources */,
 				30AB3B902B571B8E006F13DB /* DrinkAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30AB3B9C2B571B8E006F13DB /* DrinkAPIUITestsLaunchTests.swift in Sources */,
+				30AB3C0B2B58C10F006F13DB /* Drink.swift in Sources */,
 				30AB3B9A2B571B8E006F13DB /* DrinkAPIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,19 +625,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		30AB3B7C2B571B8C006F13DB /* DrinkAPI.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				30AB3B7D2B571B8C006F13DB /* DrinkAPI.xcdatamodel */,
-			);
-			currentVersion = 30AB3B7D2B571B8C006F13DB /* DrinkAPI.xcdatamodel */;
-			path = DrinkAPI.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 30AB3B6D2B571B8C006F13DB /* Project object */;
 }

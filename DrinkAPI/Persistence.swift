@@ -13,11 +13,38 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
         do {
+            guard let url = URL(string: "www.thecocktaildb.com/api/json/v1/1/random.php") else {
+                   print("Invalid URL")
+                return
+               }
+            
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let error = error {
+                    print("Error: \(error)")
+                    return
+                }
+                
+                // Check if there's data
+                guard let data = data else {
+                    print("No data received")
+                    return
+                }
+                
+                do {
+                    // Decode the JSON data
+                    let decoder = JSONDecoder()
+                    let decodedData = try decoder.decode(Drink.self, from: data)
+                    
+                    // Access the decoded data
+                    // Example: let propertyValue = decodedData.property1
+                    print(decodedData)
+                } catch {
+                    print("Error decoding JSON: \(error)")
+                }
+            }
+                
+            task.resume()
             try viewContext.save()
         } catch {
             // Replace this implementation with code to handle the error appropriately.

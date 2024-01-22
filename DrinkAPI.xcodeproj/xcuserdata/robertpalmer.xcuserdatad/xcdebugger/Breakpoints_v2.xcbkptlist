@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "175D1C2E-01A7-4A23-86C9-410978DE1AA2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1C53C24-5CCB-4C96-BA33-F3842560FA5E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B1C53C24-5CCB-4C96-BA33-F3842560FA5E - 8bcd67c8164fae7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "1272">
+               </Location>
+               <Location
+                  uuid = "B1C53C24-5CCB-4C96-BA33-F3842560FA5E - 8bcd67c8164fae5a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "1272">
+               </Location>
+               <Location
+                  uuid = "B1C53C24-5CCB-4C96-BA33-F3842560FA5E - 8bcd67c8164fae1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1272">
+               </Location>
+               <Location
+                  uuid = "B1C53C24-5CCB-4C96-BA33-F3842560FA5E - 8bcd67c8164fafff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1272">
+               </Location>
+               <Location
+                  uuid = "B1C53C24-5CCB-4C96-BA33-F3842560FA5E - 8bcd67c8164fafff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1516">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D50454B-BD54-43A3-8C33-242B3F3987B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6D50454B-BD54-43A3-8C33-242B3F3987B7 - e68b0565bd13a268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1744">
+               </Location>
+               <Location
+                  uuid = "6D50454B-BD54-43A3-8C33-242B3F3987B7 - e68b0565bd13a268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1732">
+               </Location>
+               <Location
+                  uuid = "6D50454B-BD54-43A3-8C33-242B3F3987B7 - e68b0565bd13a268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "1736">
+               </Location>
+               <Location
+                  uuid = "6D50454B-BD54-43A3-8C33-242B3F3987B7 - e68b0565bd13a249"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1856">
+               </Location>
+               <Location
+                  uuid = "6D50454B-BD54-43A3-8C33-242B3F3987B7 - e68b0565bd13a20f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "1624">
+               </Location>
+               <Location
+                  uuid = "6D50454B-BD54-43A3-8C33-242B3F3987B7 - e68b0565bd13a3ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "2064">
+               </Location>
+               <Location
+                  uuid = "6D50454B-BD54-43A3-8C33-242B3F3987B7 - e68b0565bd13a3ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "2244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FFE332E-B5BF-40B2-A931-8B6B017B13B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2FFE332E-B5BF-40B2-A931-8B6B017B13B7 - e68b0565bd13a514"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  uuid = "2FFE332E-B5BF-40B2-A931-8B6B017B13B7 - e68b0565bd13a514"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "712">
+               </Location>
+               <Location
+                  uuid = "2FFE332E-B5BF-40B2-A931-8B6B017B13B7 - e68b0565bd13a514"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "724">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E441A0C1-39C6-4669-BB5A-868D3DE8240C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E441A0C1-39C6-4669-BB5A-868D3DE8240C - 8bcd67c8164fad42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "E441A0C1-39C6-4669-BB5A-868D3DE8240C - 8bcd67c8164fad42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DrinkAPI.ContentView.loadData() -&gt; ()"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "488">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53168728-7C50-4562-93E9-1577D971EEBA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

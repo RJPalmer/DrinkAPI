@@ -9,70 +9,60 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    @State private var drinks: [Drink] = []
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+        VStack{
+            List(drinks, id: \.idDrink) { drink in
+                Text(drink.strDrink)
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    .onAppear {
+                        loadData()
                     }
-                }
-            }
-            Text("Select an item")
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    private func loadData(){
+        var baseURL = URLComponents()
+        baseURL.host = "www.thecocktaildb.com"
+        baseURL.scheme = "https"
+        baseURL.path = "/api/json/v1/1/search.php"
+        baseURL.queryItems = [URLQueryItem(name: "f", value: "a")]
+                //URL(string: "www.thecocktaildb.com/api/json/v1/1/search.php?") else {
+        debugPrint(baseURL.string ?? "")
+        guard let url = baseURL.url else {
+                    print("Invalid URL")
+                    return
             }
-        }
+
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if let error = error {
+                    print("Error fetching data: \(error)")
+                    return
+                }
+
+                guard let data = data else {
+                    print("No data received")
+                    return
+                }
+
+                do {
+                    let decoder = JSONDecoder()
+                    let drinksResponse = try decoder.decode(Drinks.self, from: data)
+
+                    DispatchQueue.main.async {
+                        self.drinks = drinksResponse.drinks
+                    }
+                } catch {
+                    print("Error decoding JSON: \(error)")
+                }
+            }.resume()
+    }
+    private func addItem() {
+        
     }
 
     private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+        
     }
 }
 
@@ -84,5 +74,5 @@ private let itemFormatter: DateFormatter = {
 }()
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    ContentView()
 }
