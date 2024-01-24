@@ -10,17 +10,40 @@ import CoreData
 
 struct ContentView: View {
     @State private var drinks: [Drink] = []
+    @State private var searchText = ""
+    var currentPage = 1
+    var totalPages = 1
+    var pageLimit = 5
+    
+    
     var body: some View {
-        VStack{
-            List(drinks, id: \.idDrink) { drink in
-                Text(drink.strDrink)
-                    }
-                    .onAppear {
-                        loadData()
-                    }
-        }
-    }
+        VStack(alignment: .center){
+//            NavigationStack{
+//                List(drinks, id: \.idDrink){drink in
+//                    Text("\(drink.strDrink)")
+//                }
+//            }
+            NavigationStack(root: {
+                TextField("Search Drinks", text: $searchText )
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                
+                List(drinks,id: \.idDrink) { drink in
+                    NavigationLink(drink.strDrink, value: drink)
+                }
+                .navigationDestination(for: Drink.self, destination: { drink in
+                    DrinkView(drinkObject: drink)
+                })
+                .listRowSeparator(/*@START_MENU_TOKEN@*/.visible/*@END_MENU_TOKEN@*/)
+            })
+            .padding(.all)
 
+            
+        }
+        .padding(.all)
+        .onAppear(perform: {
+            loadData()
+        })
+    }
     private func loadData(){
         var baseURL = URLComponents()
         baseURL.host = "www.thecocktaildb.com"
@@ -28,7 +51,7 @@ struct ContentView: View {
         baseURL.path = "/api/json/v1/1/search.php"
         baseURL.queryItems = [URLQueryItem(name: "f", value: "a")]
                 //URL(string: "www.thecocktaildb.com/api/json/v1/1/search.php?") else {
-        debugPrint(baseURL.string ?? "")
+        //debugPrint(baseURL.string ?? "")
         guard let url = baseURL.url else {
                     print("Invalid URL")
                     return
@@ -48,7 +71,7 @@ struct ContentView: View {
                 do {
                     let decoder = JSONDecoder()
                     let drinksResponse = try decoder.decode(Drinks.self, from: data)
-
+//                    debugPrint(drinksResponse.drinks.count)
                     DispatchQueue.main.async {
                         self.drinks = drinksResponse.drinks
                     }
