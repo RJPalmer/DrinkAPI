@@ -62,6 +62,7 @@ struct Drink: Codable, Hashable {
     let dateModified: String
 
     // Add any additional properties or methods as needed
+    
 }
 
 class Drinks:Codable{

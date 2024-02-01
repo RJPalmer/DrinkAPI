@@ -14,8 +14,8 @@
             filePath = "DrinkAPI/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "loadData()"
             landmarkType = "7">
             <Locations>
@@ -107,8 +107,8 @@
             filePath = "DrinkAPI/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "loadData()"
             landmarkType = "7">
             <Locations>
@@ -230,8 +230,8 @@
             filePath = "DrinkAPI/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "loadData()"
             landmarkType = "7">
             <Locations>
@@ -293,8 +293,8 @@
             filePath = "DrinkAPI/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "loadData()"
             landmarkType = "7">
             <Locations>
@@ -341,9 +341,105 @@
             filePath = "DrinkAPI/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "944C9F7E-06DB-4960-96DB-44CECC434BBF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/DrinkView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "652CC463-1246-4855-8AD9-A00855A39775"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/DrinkView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "652CC463-1246-4855-8AD9-A00855A39775 - 7b2181b38924c874"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Spacer, SwiftUI.Text)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in DrinkAPI.DrinkView.body.getter : some"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/DrinkView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2788">
+               </Location>
+               <Location
+                  uuid = "652CC463-1246-4855-8AD9-A00855A39775 - ddf47759de875d86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.Text&gt;)&gt; in closure #2 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.border&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;, SwiftUI.Spacer, SwiftUI.Text)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt; in DrinkAPI.DrinkView.body.getter : some"
+                  moduleName = "DrinkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertpalmer/Desktop/Coding/Swift/APITest/DrinkAPI/DrinkAPI/DrinkView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22A819E5-CBE8-4B86-8D1D-60A5EE41C335"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/DrinkView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1943A8A9-3DDE-450A-B426-3599B6BC3FDC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkAPI/DrinkView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "populateIngredients()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

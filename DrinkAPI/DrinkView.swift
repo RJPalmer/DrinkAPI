@@ -9,6 +9,34 @@ import SwiftUI
 
 struct DrinkView: View {
     let drinkObject:Drink
+    var ingrdnts:[String] = []
+    
+    
+    
+     func populateIngredients() -> [String]{
+         let mirror = Mirror(reflecting: drinkObject)
+         return mirror.children.compactMap { atr in
+            if let label = atr.label, label.contains("strIngredient"){
+                return atr.value as? String
+            }
+            else {
+                return nil
+            }
+        }
+    }
+    
+    func populateMeasurements() -> [String] {
+        let mirror = Mirror(reflecting: drinkObject)
+        
+        return mirror.children.compactMap { atr in
+            if let label = atr.label, label.contains("strMeasure"){
+                return atr.value as? String
+            }
+            else{
+                return nil
+            }
+        }
+    }
     
     var body: some View {
         VStack(alignment: .leading){
@@ -25,25 +53,24 @@ struct DrinkView: View {
 //                    .frame(width: 80.0, height: 80.0)
                     .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                 VStack{
+                    var ingrdnts = populateIngredients()
                     Text("Ingredients")
                         .font(.title)
-                    List {
-                        Text("Ingredient 1")
-                        Text("Ingredient 2")
-                        Text("Ingredient 3")
+                    
+                    List(ingrdnts, id: \.self){
+                        ingrdnt in
+                        Text(ingrdnt)
                     }
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     
-                    
-                    
+                    Spacer()
                     Text("Tags")
                         .font(.title)
                     HStack{
-                            Text("Tag 1")
-                            Text("Tag 2")
-                            Text("Tag 3")
+                        Text(drinkObject.strTags ?? "")
                     }
                     Spacer()
-                    Text("Glass Type: ")
+                    Text("Glass Type: \(drinkObject.strGlass)")
                         .font(.subheadline)
                 }
             }
@@ -51,12 +78,13 @@ struct DrinkView: View {
             VStack{
                 Text("Instructions")
                     .font(.title)
-                Text("Lorem Ipsom")
+                Text(drinkObject.strInstructions)
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Spacer()
         }
         .padding(.vertical)
+
     }
 }
 

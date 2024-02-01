@@ -25,11 +25,12 @@ struct ContentView: View {
 //            }
             NavigationStack(root: {
                 TextField("Search Drinks", text: $searchText )
-                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                
+                    .background(Color.gray)
+                                    
                 List(drinks,id: \.idDrink) { drink in
                     NavigationLink(drink.strDrink, value: drink)
                 }
+                .padding(.all)
                 .navigationDestination(for: Drink.self, destination: { drink in
                     DrinkView(drinkObject: drink)
                 })
