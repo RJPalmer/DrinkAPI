@@ -53,7 +53,7 @@ struct DrinkView: View {
 //                    .frame(width: 80.0, height: 80.0)
                     .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                 VStack{
-                    var ingrdnts = populateIngredients()
+                    let ingrdnts = populateIngredients()
                     Text("Ingredients")
                         .font(.title)
                     
@@ -62,7 +62,6 @@ struct DrinkView: View {
                         Text(ingrdnt)
                     }
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    
                     Spacer()
                     Text("Tags")
                         .font(.title)
