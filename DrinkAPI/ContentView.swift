@@ -26,13 +26,19 @@ struct ContentView: View {
             NavigationStack(root: {
                 TextField("Search Drinks", text: $searchText )
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    .onChange(of: searchText) { value in
+                        loadSearchData(searchItem: searchText)
+                    }
                 
                 List(drinks,id: \.idDrink) { drink in
-                    NavigationLink(drink.strDrink, value: drink)
+                  
+                    NavigationLink {
+                        DrinkView(drinkObject: drink)
+                    } label: {
+                        DrinkListItemView(drinkObject: drink)
+                    }
+
                 }
-                .navigationDestination(for: Drink.self, destination: { drink in
-                    DrinkView(drinkObject: drink)
-                })
                 .listRowSeparator(/*@START_MENU_TOKEN@*/.visible/*@END_MENU_TOKEN@*/)
             })
             .padding(.all)
@@ -83,7 +89,42 @@ struct ContentView: View {
     private func addItem() {
         
     }
+    private func loadSearchData(searchItem: String){
+        var baseURL = URLComponents()
+        baseURL.host = "www.thecocktaildb.com"
+        baseURL.scheme = "https"
+        baseURL.path = "/api/json/v1/1/search.php"
+        baseURL.queryItems = [URLQueryItem(name: "s", value: searchItem)]
+                //URL(string: "www.thecocktaildb.com/api/json/v1/1/search.php?") else {
+        //debugPrint(baseURL.string ?? "")
+        guard let url = baseURL.url else {
+                    print("Invalid URL")
+                    return
+            }
 
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if let error = error {
+                    print("Error fetching data: \(error)")
+                    return
+                }
+
+                guard let data = data else {
+                    print("No data received")
+                    return
+                }
+
+                do {
+                    let decoder = JSONDecoder()
+                    let drinksResponse = try decoder.decode(Drinks.self, from: data)
+//                    debugPrint(drinksResponse.drinks.count)
+                    DispatchQueue.main.async {
+                        self.drinks = drinksResponse.drinks
+                    }
+                } catch {
+                    print("Error decoding JSON: \(error)")
+                }
+            }.resume()
+    }
     private func deleteItems(offsets: IndexSet) {
         
     }
