@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3040D49D2B73F39B004AD84B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040D49C2B73F39B004AD84B /* SearchView.swift */; };
 		306DB9662B61588E00CF1C49 /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DB9652B61588E00CF1C49 /* DrinkView.swift */; };
 		3092A1322B718AD0002DCA54 /* DrinkListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092A1312B718AD0002DCA54 /* DrinkListItemView.swift */; };
 		3092A1332B718AD0002DCA54 /* DrinkListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3092A1312B718AD0002DCA54 /* DrinkListItemView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3040D49C2B73F39B004AD84B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		306DB9652B61588E00CF1C49 /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
 		3092A1312B718AD0002DCA54 /* DrinkListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListItemView.swift; sourceTree = "<group>"; };
 		30AB3B752B571B8C006F13DB /* DrinkAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 		30AB3B772B571B8C006F13DB /* DrinkAPI */ = {
 			isa = PBXGroup;
 			children = (
+				3040D49C2B73F39B004AD84B /* SearchView.swift */,
 				30AB3B782B571B8C006F13DB /* DrinkAPIApp.swift */,
 				30AB3B7F2B571B8C006F13DB /* ContentView.swift */,
 				30AB3B812B571B8E006F13DB /* Assets.xcassets */,
@@ -274,6 +277,7 @@
 			files = (
 				30AB3B792B571B8C006F13DB /* DrinkAPIApp.swift in Sources */,
 				306DB9662B61588E00CF1C49 /* DrinkView.swift in Sources */,
+				3040D49D2B73F39B004AD84B /* SearchView.swift in Sources */,
 				30AB3C092B58C10F006F13DB /* Drink.swift in Sources */,
 				3092A1322B718AD0002DCA54 /* DrinkListItemView.swift in Sources */,
 				30AB3B802B571B8C006F13DB /* ContentView.swift in Sources */,
